@@ -25,7 +25,7 @@ const UserSearch: React.FC = () => {
                 {user && user.age}
             </div>
 		</div>
-	);
+	); 
 };
 
 export default UserSearch;
