@@ -1,11 +1,15 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import GuestList from "./state/GuestList";
+import UserSearch from "./state/UserSearch";
 
 const App = () => {
 	return (
 		<div>
-			<h1>Hello World!</h1>
+			<GuestList />
+            <UserSearch />
 		</div>
 	);
 };
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+const root = document.querySelector("#root") as HTMLElement;
+ReactDOM.createRoot(root).render(<App />);
